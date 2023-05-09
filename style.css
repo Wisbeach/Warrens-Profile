@@ -53,7 +53,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: relative; /* new */
 }
 
 .profilepic {
@@ -73,11 +73,10 @@ p {
   height: 200px;
   object-fit: cover;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
   opacity: 0;
-  z-index: 2;
+  z-index: 2; /* updated */
   transition: opacity 1s;
   border-radius: 50%;
   border: 10px solid #FF69B4;
@@ -85,7 +84,6 @@ p {
   justify-content: center;
   align-items: center;
 }
-
 .profilepic-container:hover .profilepic-hover  {
   opacity: 1;
 }
